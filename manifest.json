@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "OG Twitter",
+    "version": "1.0",
+    "permissions": ["scripting", "activeTab", "http://*/*"],
+    "content_scripts": [{
+      "matches": ["https://*.twitter.com/*"],
+      "js": ["popup.js"]
+    }],
+    "icons": {
+      "128": "./twit128.png"
+    }
+}
+  
